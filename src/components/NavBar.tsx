@@ -10,6 +10,8 @@ import {
   FaBars,
   FaTimes
 } from "react-icons/fa";
+
+
 import { useState } from 'react';
 
 export default function NavBar() {
