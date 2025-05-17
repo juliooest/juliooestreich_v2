@@ -16,12 +16,11 @@ const GlitchLink = ({
       href={href}
       className={`relative inline-block group/glitch ${className}`}
     >
-      {/* Conteúdo principal */}
       <span className="relative z-10 flex items-center gap-2">
         {children}
       </span>
 
-      {/* Efeito Glitch */}
+
       <div className="absolute inset-0 pointer-events-none">
         <span className="absolute top-0 left-0 w-full animate-glitch-1 opacity-0 group-hover/glitch:opacity-100 flex items-center gap-2">
           {children}

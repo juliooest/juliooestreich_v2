@@ -20,14 +20,15 @@ import { GiSpy } from "react-icons/gi";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 px-4 bg-black/90 backdrop-blur-lg">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-green-400">
-        <div className="space-y-6 border-l-2 border-green-800 pl-6">
-          <h2 className="text-2xl font-bold text-green-500 mb-4 flex items-center gap-2">
+    <section id="about" className="py-8 md:py-12 px-4 bg-black/90 backdrop-blur-lg">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-green-400">
+        {/* Coluna Sobre */}
+        <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
+          <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaShieldAlt className="text-green-600 animate-pulse" />
             SOBRE
           </h2>
-          <p className="text-green-300 leading-relaxed flex items-start gap-2">
+          <p className="text-green-300 leading-relaxed flex items-start gap-2 text-sm md:text-base">
             <FaUserSecret className="flex-shrink-0 mt-1 text-green-600" />
             Estudante de Defesa Cibernética na FIAP e CTF player. Entusiasta da 
             área de cibersegurança, seguindo trilhas de Penetration Tester e 
@@ -43,15 +44,16 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="space-y-6 border-l-2 border-green-800 pl-6">
-          <h2 className="text-2xl font-bold text-green-500 mb-4 flex items-center gap-2">
+        {/* Coluna Habilidades */}
+        <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
+          <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaTools className="text-green-600" />
             HABILIDADES
           </h2>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <h3 className="text-green-500 mb-2 flex items-center gap-2">
+              <h3 className="text-green-500 mb-2 flex items-center gap-2 text-sm md:text-base">
                 <FaTools className="text-sm" /> Ferramentas
               </h3>
               <ul className="space-y-1 text-sm text-green-300">
@@ -68,8 +70,8 @@ const AboutSection = () => {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-green-500 mb-2 flex items-center gap-2">
+            <div className="mt-4 sm:mt-0">
+              <h3 className="text-green-500 mb-2 flex items-center gap-2 text-sm md:text-base">
                 <FaCode className="text-sm" /> Linguagens
               </h3>
               <ul className="space-y-1 text-sm text-green-300">
@@ -88,7 +90,7 @@ const AboutSection = () => {
           </div>
 
           <div className="mt-4 p-4 bg-green-900/20 rounded-lg border border-green-800/50">
-            <h3 className="text-green-500 mb-2 flex items-center gap-2">
+            <h3 className="text-green-500 mb-2 flex items-center gap-2 text-sm md:text-base">
               <FaShieldAlt className="text-sm" /> Especializações
             </h3>
             <div className="text-sm text-green-300 space-y-2">
@@ -105,8 +107,9 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="space-y-6 border-l-2 border-green-800 pl-6">
-          <h2 className="text-2xl font-bold text-green-500 mb-4 flex items-center gap-2">
+        {/* Coluna Experiência */}
+        <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
+          <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaChartLine className="text-green-600" />
             EXPERIÊNCIA
           </h2>
@@ -116,7 +119,7 @@ const AboutSection = () => {
             
             <div className="relative pl-6 mb-6">
               <div className="absolute left-0 top-2 w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              <h3 className="text-green-400 font-medium flex items-center gap-2">
+              <h3 className="text-green-400 font-medium flex items-center gap-2 text-sm md:text-base">
                 <FaRobot className="text-green-600" />
                 AmBev Grandourados
               </h3>
@@ -131,7 +134,7 @@ const AboutSection = () => {
                   <FaDatabase className="text-xs" /> Banco de dados em escala
                 </div>
               </div>
-              <div className="mt-2 flex gap-2">
+              <div className="mt-2 flex gap-2 flex-wrap">
                 <span className="px-2 py-1 bg-green-900/30 text-green-400 rounded text-xs flex items-center gap-2">
                   <FaDatabase /> PostgreSQL
                 </span>
@@ -143,7 +146,7 @@ const AboutSection = () => {
           </div>
 
           <div className="p-4 bg-green-900/20 rounded-lg border border-green-800/50">
-            <h3 className="text-green-500 mb-2 flex items-center gap-2">
+            <h3 className="text-green-500 mb-2 flex items-center gap-2 text-sm md:text-base">
               <FaChartLine className="text-sm" /> Atual
             </h3>
             <div className="text-sm text-green-300 space-y-2">
