@@ -1,5 +1,5 @@
-// components/SecurityDashboard.tsx
 "use client";
+
 import { useState } from 'react';
 import Terminal from "./Terminal";
 import Siem, { LogEntry } from "./Siem";

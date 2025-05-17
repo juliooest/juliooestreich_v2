@@ -22,7 +22,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-8 md:py-12 px-4 bg-black/90 backdrop-blur-lg">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-green-400">
-        {/* Coluna Sobre */}
+        
         <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
           <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaShieldAlt className="text-green-600 animate-pulse" />
@@ -44,7 +44,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Coluna Habilidades */}
+        
         <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
           <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaTools className="text-green-600" />
@@ -107,7 +107,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Coluna Experiência */}
+        
         <div className="space-y-4 md:space-y-6 border-l-2 border-green-800 pl-4 md:pl-6">
           <h2 className="text-xl md:text-2xl font-bold text-green-500 mb-3 md:mb-4 flex items-center gap-2">
             <FaChartLine className="text-green-600" />

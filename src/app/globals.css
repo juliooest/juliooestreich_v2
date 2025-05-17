@@ -53,7 +53,7 @@ body {
   }
 }
 
-/* app/globals.css */
+
 .glitch-link {
   position: relative;
   overflow: hidden;
@@ -70,7 +70,7 @@ body {
   }
 }
 
-/* app/globals.css */
+
 @layer components {
   .glitch-layer {
     animation-fill-mode: forwards;

@@ -17,7 +17,6 @@ export default function NavBar() {
 
   return (
     <nav className="flex justify-between items-center p-4 bg-black/90 backdrop-blur-md border-b border-green-800/50">
-      {/* Logo */}
       <div className="flex items-center">
         <GlitchLink href="#">
           <span className="text-lg md:text-xl font-bold text-green-400 flex items-center gap-2">
@@ -28,7 +27,7 @@ export default function NavBar() {
         </GlitchLink>
       </div>
 
-      {/* Menu Desktop */}
+      
       <div className="hidden md:flex items-center">
         <ul className="flex gap-4 lg:gap-6 list-none m-0 p-0">
           <li>
@@ -79,7 +78,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      {/* Menu Mobile */}
+      
       <div className="md:hidden">
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
