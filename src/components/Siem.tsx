@@ -16,7 +16,6 @@ interface SiemProps {
 export default function Siem({ logs = [] }: SiemProps) {
   const [internalLogs, setInternalLogs] = useState<LogEntry[]>([]);
 
-  // Simula log inicial do whoami
   useEffect(() => {
     const initialLog: LogEntry = {
       id: Date.now(),
@@ -29,7 +28,6 @@ export default function Siem({ logs = [] }: SiemProps) {
     setInternalLogs([initialLog]);
   }, []);
 
-  // Atualiza logs quando recebe novas entradas
   useEffect(() => {
     if(logs.length > 0) {
       const newLogs = logs.map(log => ({
@@ -44,12 +42,11 @@ export default function Siem({ logs = [] }: SiemProps) {
 
   return (
     <div className="flex flex-col md:flex-row gap-8 p-4 max-w-6xl mx-auto">
-      {/* Texto Explicativo */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-green-800 mb-4">
           Simulador SIEM
         </h2>
-        <div className="text-gray-600 space-y-4">
+        <div className="text-green-600 space-y-4">
           <p>
             O SIEM (Security Information and Event Management) simula o monitoramento
             em tempo real dos comandos executados no terminal.
@@ -68,7 +65,6 @@ export default function Siem({ logs = [] }: SiemProps) {
         </div>
       </div>
 
-      {/* Painel de Logs */}
       <div className="w-full md:w-1/2 bg-gray-50 p-6 rounded-lg border border-gray-200">
         <div className="mb-4 h-96 overflow-y-auto">
           <div className="text-sm space-y-4">

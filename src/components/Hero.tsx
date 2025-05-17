@@ -1,3 +1,4 @@
+import { GlitchText } from "./GlitchText";
 
 export default function Hero() {
     return (
@@ -6,10 +7,30 @@ export default function Hero() {
                 <img className="w-[300px] h-[300px]" src="/avatar.png" alt="profile-avatar" />
             </div>
             <div>
-                <p className="whitespace-pre-line">
-                        Olá, meu nome é Júlio Oestreich,<br />
+                <p className="whitespace-pre-line text-green-600 text-3xl">
+                        <span>
+
+                            <GlitchText>
+                                <span className="font-bold text-green-700">
+                            Olá
+                            </span>, {""}
+                            </GlitchText>
+                           meu nome é {" "}
+                           <GlitchText>
+                            <span className="font-bold text-green-700">
+                                Júlio Oestreich
+                            </span>
+                            </GlitchText>
+                        </span>,
+                        <br />
                         e seja bem vindo,<br />
-                        ao meu Portfólio.
+                        ao meu {" "}
+                        <GlitchText>
+                            <span className="font-bold text-green-700">
+                                Portfólio.
+                            </span>
+                        </GlitchText>
+                        
                 </p>
             </div>
         </main>
